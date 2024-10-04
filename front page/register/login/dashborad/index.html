@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-brand">
+                <h1 id="panel-title">Dashboard</h1>
+            </div>
+            <ul id="sidebar-menu">
+                <li><a href="#">Customer</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Inventory</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <header class="main-header">
+                <h2 id="dashboard-title">Dashboard</h2>
+                <div class="search-wrapper">
+                    <input type="search" id="search" placeholder="Search">
+                </div>
+                <div class="log-out">
+                    <a href="#" id="header-logout" class="logout-btn">Log Out</a>
+                </div>
+            </header>
+
+            <div id="dashboard-content" class="content-area">
+                <table id="user-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>NAME</th>
+                            <th>EMAIL</th>
+                            <th>PASSWORD</th>
+                            <th>ROLE</th>
+                            <th>STATUS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                
+                <div id="pagination" class="pagination">
+                    <button id="prev-page" class="page-button"> &lt; </button>
+                    <span id="current-page">Page 1</span>
+                    <button id="next-page" class="page-button"> &gt; </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script> 
+</body>
+
+</html>
